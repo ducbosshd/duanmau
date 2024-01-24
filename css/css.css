@@ -1,0 +1,248 @@
+/* css phần đăng nhập */
+.item_hearder{
+    list-style: none;
+    padding-top: 0px ;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.item_dangnhap{
+    text-decoration: none;
+    color: black;
+}
+/* end */
+/* danh mục trang chủ */
+h3 {
+    font-size: 24px; /* Kích thước font chữ */
+    color: #333; /* Màu chữ */
+}
+
+.anhdm {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* đổ bóng */
+    transition: transform 0.3s; 
+}
+
+.anhdm:hover {
+    transform: scale(1.05); 
+}
+
+.anh_dm {
+    height: 250px;
+    object-fit: cover;
+}
+
+.tenanh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s; /* Hiệu ứng xuất hiện */
+}
+
+.tenanh a {
+    text-decoration: none;
+    color: white;
+}
+.anhdm:hover .anh_dm {
+    filter: blur(1px); /* Mờ hình ảnh khi hover */
+}
+.anhdm:hover .tenanh {
+    opacity: 1;
+}
+/* end */
+/* top sp */
+.sanpham {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tenSP {
+    text-decoration: none; /* Loại bỏ đường link */
+    color: #333; /* Màu chữ tiêu đề */
+}
+
+.giaSP {
+    color: #ff6600; /* Màu chữ giá */
+}
+
+.themSP{
+    display: inline-block;
+    background-color: white; 
+    color: black; 
+    border: 1px solid black;
+    padding: 7px 15px; 
+    margin-right: auto;
+    border-radius: 5px; 
+    cursor: pointer; /* Con trỏ khi di chuột qua nút */
+}
+.themSP:hover, .muangay:hover {
+    background-color: #ff6600; 
+    color: white;
+}
+/* end topSP */
+/* tin tức trang chủ */
+.img_tintuc{
+    height: 400px;
+    object-fit: cover;
+}
+.tintuc{
+    text-decoration: none;
+    color: black;
+}
+/* end */
+/* footter */
+.box50{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+}
+.footter ul{
+    list-style: none;
+    padding: 0px ;
+    margin: 0px;
+}
+.footter ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+/* end footter */
+/* Đăng nhập */
+.form_dangnhap, .form_dangky, .form_quenMK{
+    max-width: 600px; 
+    margin: 10px auto; 
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #f7eded ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) ;
+    border-radius: 5px;
+}
+
+/* Định dạng nút đăng nhập */
+.dangnhap, .dangkyTK, .layMK{
+    margin-top: 5px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.dangnhap:hover, .dangkyTK:hover, .layMK:hover{
+    background-color: #ff6600;
+}
+
+/* Định dạng nhãn (label) */
+.form-label {
+    font-weight: bold;
+}
+
+.dangky, .quenMK{
+    text-decoration: none;
+    color: black;
+}
+.dangky:hover, .quenMK:hover{
+    color: #ff6600;
+}
+/* chi tiết sản phẩm */
+.muangay{
+    background-color: white; 
+    color: black; 
+    border: 1px solid black;
+    padding: 7px 15px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.anh2{
+    width: 90px;
+    margin: 10px;
+    object-fit: cover;
+}
+.anh1{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.select_chitietSP{ 
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* end */
+/* menu admin */
+.navbar-nav .nav-link {
+    color: #000; /* Màu chữ mặc định */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu */
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #ff6600;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    /* background-color: #ff6600; */
+}
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+/* thêm sp adm */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    box-sizing: border-box;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Hiệu ứng hover cho input và select */
+.form-control:hover,
+.form-select:hover {
+    border-color: #007bff;
+}
+.form_nd {
+    padding: 20px;
+}
+
+.form_addsp, .form_add_dm, .form_sua_sp, .form_sua_dm, .form_add_mgg, .form_edit_mgg{
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) ;
+    border-radius: 5px;
+}
+
+/* hình ảnh sửa sản phẩm */
+.image-container {
+    margin-bottom: 20px;
+}
+.image-chitiet {
+    display: flex;
+}
